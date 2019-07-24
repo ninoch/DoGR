@@ -53,7 +53,7 @@ if __name__ == '__main__':
 	pickle.dump(mlr_coefs, open("{}/mlr_params.p".format(pickle_dir), "wb"))
 
 	# ***********************************
-	# ********         GMR       ********
+	# ********         DogR       ********
 	# ***********************************
 	XY = np.array(df[name_of_variables_including_y].values)
 	dogr = DogR(number_of_components)
@@ -79,16 +79,16 @@ if __name__ == '__main__':
 
 	print ("Mu of each component:")
 	for ind, feature in enumerate(name_of_variables):
-		print feature
+		print (feature)
 		for k in range(number_of_components):
-			print "\t component #{0}: {1:.2f}".format(k, gmr.mu[k, ind])
+			print ("\t component #{0}: {1:.2f}".format(k, dogr.mu[k, ind]))
 
 
 	print ("***************************************")
 
 	print ("Regression of each component:")
 
-	print ("Intercept -> \n\tMLR: {} \n\tGMR: {}".format(mlr_coefs[0], dogr_coefs[:, 0]))
+	print ("Intercept -> \n\tMLR: {} \n\tDogR: {}".format(mlr_coefs[0], dogr_coefs[:, 0]))
 	for ind, var in enumerate(name_of_variables):
 		print ("{0} -> \n\tMLR: {1:.4f}".format(var, mlr_coefs[ind + 1]))
 		for comp in range(number_of_components):

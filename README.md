@@ -9,6 +9,7 @@ You can run DogR using python-3. The required packages are as follow:
 * `sklearn`
 * `statsmodels`
 * `matplotlib`
+* `seaborn`
 
 There are three folders: `\Data\`, `\Figures\` and `\Pickels\`. The `.csv` file of the dataset needed to be in `\Data\` folder. The parameters of the learned model for each dataset, is going to be save in a subfolder (with the name of the dataset) in `\Pickels\` folder. The generated figures are going to be store in `\Figures\` folder. 
 
