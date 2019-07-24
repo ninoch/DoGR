@@ -12,7 +12,7 @@ You can run DogR using python-3. The required packages are as follow:
 
 There are three folders: `\Data\`, `\Figures\` and `\Pickels\`. The `.csv` file of the dataset needed to be in `\Data\` folder. The parameters of the learned model for each dataset, is going to be save in a subfolder (with the name of the dataset) in `\Pickels\` folder. The generated figures are going to be store in `\Figures\` folder. 
 
-## Scripts: 
+## How to run
 
 ### Prediction
 For running the prediction task on your data, you need to specify name of dataset by `--dataset`, the y variable by `--y_var`, minimum and maximum number of components to consider as hyper parameter tuning by `--min_comp` and `--max_comp`. For example, following command would run the prediction task for Tract Data, by considering y variables as `meanV` and number of components in range `1-7`. 
