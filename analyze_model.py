@@ -43,7 +43,7 @@ if __name__ == '__main__':
 	# ***********************************
 	# ********         MLR       ********
 	# ***********************************
-	mlr_coefs = pickle.load(open("{}/mlr_params.p".format(pickle_dir), "r"))
+	mlr_coefs = pickle.load(open("{}/mlr_params.p".format(pickle_dir), "rb"))
 
 	# ***********************************
 	# ********         dogr       ********
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 	XY = np.array(df[name_of_variables_including_y].values)
 	dogr = DogR(1) # 1 is a dummy number! 
 
-	dogr.load("{}/fdwr_params.p".format(pickle_dir))
+	dogr.load("{}/dogr_params.p".format(pickle_dir))
 
 	number_of_components = dogr.coefficients.shape[0]
 

@@ -62,7 +62,7 @@ if __name__ == '__main__':
 	dogr_coefs = dogr.coefficients[:]
 	groups = dogr.get_groups(XY)
 
-	dogr.save("{}/fdwr_params.p".format(pickle_dir))
+	dogr.save("{}/dogr_params.p".format(pickle_dir))
 
 
 	# *************************************

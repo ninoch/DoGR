@@ -99,4 +99,4 @@ class DogR(object):
         pickle.dump(params, open(file_name, "wb"))
 
     def load(self, file_name):
-        self.number_of_components, self.D, self.priors, self.mu, self.sigma, self.coefficients, self.y_sigma, self.ll = pickle.load(open(file_name, "r"))
+        self.number_of_components, self.D, self.priors, self.mu, self.sigma, self.coefficients, self.y_sigma, self.ll = pickle.load(open(file_name, "rb"))
