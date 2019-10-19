@@ -67,7 +67,7 @@ if __name__ == '__main__':
 				for number_of_components in num_com_hyper:
 					RMSE = []
 					for train_index, validation_index in inner_cross_val.split(train_df):
-						train, validation = df.iloc[train_index][name_of_variables_including_y], df.iloc[validation_index][name_of_variables_including_y]
+						train, validation = train_df.iloc[train_index][name_of_variables_including_y], train_df.iloc[validation_index][name_of_variables_including_y]
 
 						X = np.array(train[name_of_variables_including_y].values)
 						try:
