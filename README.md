@@ -1,4 +1,6 @@
 ## Description: 
+Quantitative analysis of large-scale data is often complicated by the presence of diverse subgroups, which reduce the accuracy of inferences they make on held-out data. To address the challenge of heterogeneous data analysis, we propose a method that discovers latent confounders by simultaneously partitioning the data into overlapping clusters (disaggregation) and modeling the behavior within them (regression).
+When applied to real-world data, our method discovers meaningful clusters and their characteristic behaviors, thus giving insight into group differences and their impact on the outcome of interest. By accounting for latent confounders, our framework facilitates exploratory analysis of noisy, heterogeneous data and can be used to learn predictive models that better generalize to new data.
 
 ## Requirements:
 You can run DogR using python-3. The required packages are as follow: 
